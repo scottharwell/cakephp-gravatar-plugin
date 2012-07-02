@@ -62,7 +62,7 @@ class GravatarHelper extends AppHelper
     
     public static function image ($email, $s = 80, $d = 'mm', $r = 'g', $atts = array ())
     {
-	return self::link($email, $s, $d, $r, true, $atts);
+	return self::gravatar($email, $s, $d, $r, true, $atts);
     }
     
     /*
@@ -78,7 +78,7 @@ class GravatarHelper extends AppHelper
     
     public static function link ($email, $s = 80, $d = 'mm', $r = 'g', $atts = array ())
     {
-	return self::link($email, $s, $d, $r, false, $atts);
+	return self::gravatar($email, $s, $d, $r, false, $atts);
     }
 
 }
